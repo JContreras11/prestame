@@ -1,0 +1,49 @@
+#map {
+margin: 0;
+padding: 0;
+
+height: 500px;
+}
+
+.formsinmargen {
+  /*background-color: red; */
+  /*margin-top: 1;
+  margin-top: 0; */
+  margin: 0;
+  padding-top: 4px;
+  padding-left,padding-right,padding-bottom: : :0
+}
+
+.margensup {
+
+}
+
+.contienemapa {
+
+/*background-color: yellow;*/
+padding: 0;
+margin: 0;
+}
+.contienemapa2 {
+
+/*background-color: orange;*/
+padding: 0;
+margin: 0;
+}
+.barrasuperior {
+
+  padding: 0;
+  margin: 0;
+}
+
+.fondogris {
+  background-color:#C0C0C0 ;
+}
+
+
+@media all and (min-width:0px) and (max-width: 680px) {
+  /* put your css styles in here */
+  .margensup {
+    margin-top:7px;
+  }
+}
