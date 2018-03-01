@@ -26,15 +26,22 @@ class Login extends CI_Controller
 
     $res = $this->Modelo_Login->verificar($datos);
 
-    if ($res->num_rows()==1) {
-      $usuario = array(
-        '' => ,
-        '' => ,
-        '' => ,
-        '' => , 
-    );
-    }else{
+    if (count($res) == 1) {
 
+      foreach ($res as $key ) {
+      $usuario = array(
+        's_usuario' => $key->user,
+        's_id' => $key->ide_user,
+        's_tipo' => $key->tipo,
+        'apodo' => $key->apodo,
+      );
+    }
+
+
+    $this->session->set_userdata($usuario);
+      redirect(site_url('home'));
+    }else{
+       redirect(base_url());
     }
 
 
