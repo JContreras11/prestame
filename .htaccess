@@ -1,5 +1,6 @@
-RewriteEngine On
-RewriteBase /presta.me/
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /presta.me/index.php/$1 [L]
+
+    RewriteEngine On
+    RewriteBase /prestame/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /prestame/index.php [L]

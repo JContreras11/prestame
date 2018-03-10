@@ -37,7 +37,7 @@
                         <h3>Ingresa a tu cuenta</h3>
                     </header>
                     <div class="widget-body">
-                      <form class="" action="<?=base_url() ?>Login/verificar" method="post">
+                      <form class="" action="<?php echo base_url();?>login/verificar" method="post">
                             <div class="form-group">
                                 <input type="text" name="user" id="user" value="" placeholder="Usuario">
                             </div>
@@ -87,7 +87,7 @@
 
 <!-- page specific js -->
 <script>
-var base_url = '<?= base_url() ?>';
+var base_url = '<?php echo base_url(); ?>';
 $(function(){
     function pageLoad(){
       console.log('iniciamos');
