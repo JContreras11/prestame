@@ -1,7 +1,7 @@
 <?php /**
  *
  */
-class Home extends CI_Controller
+class ChomeAdmin extends CI_Controller
 {
 
   function __construct()
@@ -12,7 +12,9 @@ class Home extends CI_Controller
 
   public function index()
   {
-    $this->load->view('home');
+    $this->load->view('vHomeAdmin');
   }
 }
+
+
  ?>

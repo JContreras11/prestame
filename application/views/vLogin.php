@@ -37,7 +37,7 @@
                         <h3>Ingresa a tu cuenta</h3>
                     </header>
                     <div class="widget-body">
-                      <form class="" action="<?php echo base_url();?>login/verificar" method="post">
+                      <form class="" action="<?php echo base_url();?>cLogin/verificar" method="post">
                             <div class="form-group">
                                 <input type="text" name="user" id="user" value="" placeholder="Usuario">
                             </div>
@@ -45,8 +45,16 @@
                                 <input type="password" name="pass" id="pass" value="" placeholder="Contraseña">
                             </div>
                             <div class="clearfix">
-                                <div class="btn-toolbar pull-right">
+                                <div class="btn-toolbar pull-left">
                                     <input type="submit" class="btn btn-inverse btn-sm full-width m-b" value="Entrar">
+
+                                </div>
+                                <div class="clearfix">
+
+                                  <div class="form-group pull-right">
+                                    <a href="<?php echo base_url();?>cUsuario">Nuevo Usuario</a>
+
+                                  </div>
 
                                 </div>
                             </div>

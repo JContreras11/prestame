@@ -1,7 +1,7 @@
 <?php /**
  *
  */
-class Modelo_Login extends CI_Model
+class Mlogin extends CI_Model
 {
 
 
